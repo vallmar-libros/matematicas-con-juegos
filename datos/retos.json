@@ -1,0 +1,3843 @@
+{
+ "libro": "Matemáticas con juegos",
+ "autor": "Leo Vallmar",
+ "fecha": "2026-11-09",
+ "nota": "Datos de cada reto, sin soluciones. Los leen los programas de la carpeta programas/.",
+ "retos": {
+  "M-00-01": {
+   "capitulo": 0,
+   "nivel": 1,
+   "tipo": "rejilla-cifras",
+   "titulo": "Ejemplo resuelto: la rejilla de cifras",
+   "enunciado": "Completa la rejilla de 4×4 con las cifras del 1 al 4. Cada cifra va una sola vez en cada fila, en cada columna y en cada caja de borde grueso (2×2).",
+   "datos": {
+    "n": 4,
+    "puzzle": [
+     [
+      2,
+      0,
+      1,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      3
+     ],
+     [
+      0,
+      4,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      4,
+      1
+     ]
+    ]
+   }
+  },
+  "M-00-02": {
+   "capitulo": 0,
+   "nivel": 1,
+   "tipo": "estimacion-calculo",
+   "titulo": "¿Se ha equivocado la máquina?",
+   "enunciado": "Batalla de estimación por parejas. Para cada cuenta, cada jugador escribe una estimación en 10 segundos, sin calcular con lápiz: 29 × 7; 19 × 6; 44 × 6; 365 : 3. Después se calcula. Gana un punto quien quede a menos del 10 % del valor exacto; si los dos, quien esté más cerca. Si empatáis, ambos ganáis un punto.",
+   "datos": {
+    "ops": [
+     [
+      "x",
+      29,
+      7
+     ],
+     [
+      "x",
+      19,
+      6
+     ],
+     [
+      "x",
+      44,
+      6
+     ],
+     [
+      "/",
+      365,
+      3
+     ]
+    ],
+    "tolerancia": 10
+   }
+  },
+  "M-00-03": {
+   "capitulo": 0,
+   "nivel": 1,
+   "tipo": "numero-misterioso",
+   "titulo": "Primer reto sin IA: el número escondido",
+   "enunciado": "Estoy pensando un número entre 10 y 60. Al dividirlo entre 5 sobra 2. Sus cifras suman 9. ¿Qué número es? Escribe por qué descartas los demás.",
+   "datos": {
+    "lo": 10,
+    "hi": 60,
+    "pistas": [
+     [
+      "resto",
+      5,
+      2
+     ],
+     [
+      "suma_cifras",
+      9
+     ]
+    ]
+   }
+  },
+  "M-01-01": {
+   "capitulo": 1,
+   "nivel": 1,
+   "tipo": "rejilla-cifras",
+   "titulo": "Cuatro cifras, cuatro filas",
+   "enunciado": "Completa la rejilla de 4×4 con las cifras del 1 al 4. Cada cifra va una sola vez en cada fila, en cada columna y en cada caja de borde grueso (2×2).",
+   "datos": {
+    "n": 4,
+    "puzzle": [
+     [
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      3,
+      1,
+      0
+     ],
+     [
+      2,
+      0,
+      3,
+      0
+     ],
+     [
+      0,
+      0,
+      2,
+      1
+     ]
+    ]
+   }
+  },
+  "M-01-02": {
+   "capitulo": 1,
+   "nivel": 1,
+   "tipo": "rejilla-jaulas",
+   "titulo": "Jaulas que suman",
+   "enunciado": "Completa la rejilla de 4×4 con las cifras del 1 al 4, sin repetir ninguna en una fila ni en una columna. Cada jaula (zona de borde grueso) lleva un número y una operación (suma): sus cifras, operadas, dan ese número. Una jaula de una sola casilla lleva solo un número: esa es su cifra. Dentro de una jaula sí se pueden repetir cifras si están en filas y columnas distintas.",
+   "datos": {
+    "n": 4,
+    "jaulas": [
+     {
+      "celdas": [
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        0
+       ]
+      ],
+      "op": "+",
+      "valor": 3
+     },
+     {
+      "celdas": [
+       [
+        2,
+        1
+       ],
+       [
+        3,
+        1
+       ]
+      ],
+      "op": "+",
+      "valor": 5
+     },
+     {
+      "celdas": [
+       [
+        2,
+        0
+       ],
+       [
+        3,
+        0
+       ]
+      ],
+      "op": "+",
+      "valor": 7
+     },
+     {
+      "celdas": [
+       [
+        1,
+        3
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        2,
+        3
+       ]
+      ],
+      "op": "+",
+      "valor": 6
+     },
+     {
+      "celdas": [
+       [
+        0,
+        2
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        1,
+        2
+       ]
+      ],
+      "op": "+",
+      "valor": 7
+     },
+     {
+      "celdas": [
+       [
+        0,
+        1
+       ]
+      ],
+      "op": "=",
+      "valor": 3
+     },
+     {
+      "celdas": [
+       [
+        3,
+        2
+       ],
+       [
+        3,
+        3
+       ]
+      ],
+      "op": "+",
+      "valor": 5
+     },
+     {
+      "celdas": [
+       [
+        0,
+        3
+       ]
+      ],
+      "op": "=",
+      "valor": 4
+     }
+    ]
+   }
+  },
+  "M-01-03": {
+   "capitulo": 1,
+   "nivel": 1,
+   "tipo": "cuadrado-magico",
+   "titulo": "El cuadrado que siempre suma igual",
+   "enunciado": "Coloca los números 1, 2, 3, 4, 5, 6, 7, 8 y 9 en el cuadrado de 3×3, cada uno una vez, para que todas las filas, todas las columnas y las dos diagonales sumen lo mismo. Algunos ya están puestos. Primero averigua cuánto debe sumar cada línea.",
+   "datos": {
+    "n": 3,
+    "numeros": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "puzzle": [
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      5,
+      0
+     ],
+     [
+      4,
+      9,
+      0
+     ]
+    ]
+   }
+  },
+  "M-01-04": {
+   "capitulo": 1,
+   "nivel": 1,
+   "tipo": "triangulo-magico",
+   "titulo": "Triángulo de lados iguales",
+   "enunciado": "Coloca los números 1, 2, 3, 4, 5 y 6 en los seis círculos del triángulo (tres en los vértices y tres en medio de los lados), cada uno una vez, para que cada lado sume 10. Los números ya escritos no se mueven.",
+   "datos": {
+    "numeros": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "suma": 10,
+    "dados": [
+     0,
+     0,
+     0,
+     6,
+     1,
+     0
+    ]
+   }
+  },
+  "M-01-05": {
+   "capitulo": 1,
+   "nivel": 2,
+   "tipo": "numero-misterioso",
+   "titulo": "¿Quién es el número?",
+   "enunciado": "Estoy pensando un número entre 10 y 99. Al dividirlo entre 4 sobra 2. Termina en 6. Al dividirlo entre 7 sobra 2. ¿Qué número es? Escribe por qué descartas los demás.",
+   "datos": {
+    "lo": 10,
+    "hi": 99,
+    "pistas": [
+     [
+      "resto",
+      4,
+      2
+     ],
+     [
+      "unidades",
+      6
+     ],
+     [
+      "resto",
+      7,
+      2
+     ]
+    ]
+   }
+  },
+  "M-01-06": {
+   "capitulo": 1,
+   "nivel": 2,
+   "tipo": "rejilla-jaulas",
+   "titulo": "Jaulas con tres operaciones",
+   "enunciado": "Completa la rejilla de 4×4 con las cifras del 1 al 4, sin repetir ninguna en una fila ni en una columna. Cada jaula (zona de borde grueso) lleva un número y una operación (división, multiplicación y suma): sus cifras, operadas, dan ese número. En la resta y en la división se empieza por la cifra mayor. Una jaula de una sola casilla lleva solo un número: esa es su cifra. Dentro de una jaula sí se pueden repetir cifras si están en filas y columnas distintas.",
+   "datos": {
+    "n": 4,
+    "jaulas": [
+     {
+      "celdas": [
+       [
+        1,
+        1
+       ],
+       [
+        2,
+        0
+       ],
+       [
+        2,
+        1
+       ]
+      ],
+      "op": "+",
+      "valor": 7
+     },
+     {
+      "celdas": [
+       [
+        1,
+        2
+       ],
+       [
+        2,
+        2
+       ]
+      ],
+      "op": "x",
+      "valor": 12
+     },
+     {
+      "celdas": [
+       [
+        0,
+        1
+       ],
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        3
+       ]
+      ],
+      "op": "+",
+      "valor": 7
+     },
+     {
+      "celdas": [
+       [
+        3,
+        3
+       ]
+      ],
+      "op": "=",
+      "valor": 4
+     },
+     {
+      "celdas": [
+       [
+        1,
+        3
+       ],
+       [
+        2,
+        3
+       ]
+      ],
+      "op": "x",
+      "valor": 6
+     },
+     {
+      "celdas": [
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        0
+       ]
+      ],
+      "op": "/",
+      "valor": 3
+     },
+     {
+      "celdas": [
+       [
+        3,
+        0
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        3,
+        2
+       ]
+      ],
+      "op": "+",
+      "valor": 6
+     }
+    ]
+   }
+  },
+  "M-01-07": {
+   "capitulo": 1,
+   "nivel": 2,
+   "tipo": "sumas-cruzadas",
+   "titulo": "Sumas que se cruzan",
+   "enunciado": "Escribe una cifra del 1 al 9 en cada casilla blanca. Cada tramo horizontal o vertical de casillas blancas suma el número de su pista, y dentro de un tramo no se repite ninguna cifra. La pista de un tramo horizontal está a su izquierda, por encima de la raya. La de un tramo vertical está encima, por debajo de la raya.",
+   "datos": {
+    "plantilla": [
+     "..#",
+     "...",
+     "#.."
+    ],
+    "tramos": [
+     {
+      "dir": "h",
+      "celdas": [
+       [
+        0,
+        0
+       ],
+       [
+        0,
+        1
+       ]
+      ],
+      "suma": 6
+     },
+     {
+      "dir": "h",
+      "celdas": [
+       [
+        1,
+        0
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        1,
+        2
+       ]
+      ],
+      "suma": 6
+     },
+     {
+      "dir": "h",
+      "celdas": [
+       [
+        2,
+        1
+       ],
+       [
+        2,
+        2
+       ]
+      ],
+      "suma": 12
+     },
+     {
+      "dir": "v",
+      "celdas": [
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        0
+       ]
+      ],
+      "suma": 8
+     },
+     {
+      "dir": "v",
+      "celdas": [
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        2,
+        1
+       ]
+      ],
+      "suma": 12
+     },
+     {
+      "dir": "v",
+      "celdas": [
+       [
+        1,
+        2
+       ],
+       [
+        2,
+        2
+       ]
+      ],
+      "suma": 4
+     }
+    ]
+   }
+  },
+  "M-01-08": {
+   "capitulo": 1,
+   "nivel": 2,
+   "tipo": "criptoaritmetica",
+   "titulo": "Palabras que suman",
+   "enunciado": "En la suma HILO + HILO = COCHE, cada letra es una cifra distinta y letras iguales son cifras iguales. Ninguna palabra empieza por 0. ¿Qué cifra es cada letra? Pista de método: empieza por la columna de la izquierda y piensa en las que se llevan.",
+   "datos": {
+    "sumandos": [
+     "HILO",
+     "HILO"
+    ],
+    "resultado": "COCHE"
+   }
+  },
+  "M-01-09": {
+   "capitulo": 1,
+   "nivel": 2,
+   "tipo": "rejilla-logica",
+   "titulo": "Tres clubes, tres horas",
+   "enunciado": "Ana, Bruno y Carla: cada uno tiene un valor distinto de cada categoría (club y hora de salida). Usa la tabla: pon una X donde no pueda ser y un círculo donde sí. Pistas: (1) Quien va al club de teatro no sale a las 17:00. (2) Carla no sale a las 16:00. (3) Quien sale a las 18:00 no va al club de teatro. (4) Ana no sale a las 17:00. (5) Bruno sale antes que Ana. (6) Quien va al club de ajedrez no sale a las 17:00.",
+   "datos": {
+    "personas": [
+     "Ana",
+     "Bruno",
+     "Carla"
+    ],
+    "categorias": [
+     {
+      "nombre": "club",
+      "valores": [
+       "robótica",
+       "teatro",
+       "ajedrez"
+      ],
+      "pred": "va al club de {v}",
+      "quien": "quien va al club de {v}"
+     },
+     {
+      "nombre": "hora de salida",
+      "valores": [
+       "16:00",
+       "17:00",
+       "18:00"
+      ],
+      "pred": "sale a las {v}",
+      "quien": "quien sale a las {v}",
+      "antes": "sale antes"
+     }
+    ],
+    "pistas": [
+     [
+      "no_enlace",
+      0,
+      1,
+      1,
+      1
+     ],
+     [
+      "no",
+      2,
+      1,
+      0
+     ],
+     [
+      "no_enlace",
+      1,
+      2,
+      0,
+      1
+     ],
+     [
+      "no",
+      0,
+      1,
+      1
+     ],
+     [
+      "antes",
+      1,
+      0,
+      1
+     ],
+     [
+      "no_enlace",
+      0,
+      2,
+      1,
+      1
+     ]
+    ],
+    "ordenada": 1
+   }
+  },
+  "M-01-10": {
+   "capitulo": 1,
+   "nivel": 3,
+   "tipo": "veraces-mentirosos",
+   "titulo": "La isla de las dos tribus",
+   "enunciado": "En la isla de las dos tribus, cada persona dice siempre la verdad o miente siempre. Ana dice: «Carla dice siempre la verdad». Bruno dice: «Ana y David son de tipos distintos». Carla dice: «David dice siempre la verdad». David dice: «Ana y Carla son del mismo tipo». ¿Quién dice la verdad y quién miente?",
+   "datos": {
+    "nombres": [
+     "Ana",
+     "Bruno",
+     "Carla",
+     "David"
+    ],
+    "frases": [
+     [
+      "es",
+      0,
+      2,
+      true
+     ],
+     [
+      "mismo",
+      1,
+      0,
+      3,
+      false
+     ],
+     [
+      "es",
+      2,
+      3,
+      true
+     ],
+     [
+      "mismo",
+      3,
+      0,
+      2,
+      true
+     ]
+    ]
+   }
+  },
+  "M-01-11": {
+   "capitulo": 1,
+   "nivel": 3,
+   "tipo": "rejilla-jaulas",
+   "titulo": "Jaulas de cinco",
+   "enunciado": "Completa la rejilla de 5×5 con las cifras del 1 al 5, sin repetir ninguna en una fila ni en una columna. Cada jaula (zona de borde grueso) lleva un número y una operación (división, multiplicación, resta y suma): sus cifras, operadas, dan ese número. En la resta y en la división se empieza por la cifra mayor. Una jaula de una sola casilla lleva solo un número: esa es su cifra. Dentro de una jaula sí se pueden repetir cifras si están en filas y columnas distintas.",
+   "datos": {
+    "n": 5,
+    "jaulas": [
+     {
+      "celdas": [
+       [
+        2,
+        2
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        4,
+        2
+       ]
+      ],
+      "op": "+",
+      "valor": 11
+     },
+     {
+      "celdas": [
+       [
+        2,
+        0
+       ],
+       [
+        2,
+        1
+       ]
+      ],
+      "op": "-",
+      "valor": 1
+     },
+     {
+      "celdas": [
+       [
+        3,
+        0
+       ],
+       [
+        4,
+        0
+       ]
+      ],
+      "op": "/",
+      "valor": 3
+     },
+     {
+      "celdas": [
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        3
+       ],
+       [
+        1,
+        2
+       ]
+      ],
+      "op": "x",
+      "valor": 12
+     },
+     {
+      "celdas": [
+       [
+        2,
+        3
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        4,
+        3
+       ]
+      ],
+      "op": "+",
+      "valor": 10
+     },
+     {
+      "celdas": [
+       [
+        0,
+        4
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        1,
+        4
+       ]
+      ],
+      "op": "+",
+      "valor": 6
+     },
+     {
+      "celdas": [
+       [
+        3,
+        1
+       ],
+       [
+        4,
+        1
+       ]
+      ],
+      "op": "+",
+      "valor": 5
+     },
+     {
+      "celdas": [
+       [
+        2,
+        4
+       ],
+       [
+        3,
+        4
+       ]
+      ],
+      "op": "-",
+      "valor": 3
+     },
+     {
+      "celdas": [
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        1
+       ]
+      ],
+      "op": "-",
+      "valor": 3
+     },
+     {
+      "celdas": [
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        0
+       ]
+      ],
+      "op": "+",
+      "valor": 9
+     },
+     {
+      "celdas": [
+       [
+        4,
+        4
+       ]
+      ],
+      "op": "=",
+      "valor": 5
+     }
+    ]
+   }
+  },
+  "M-01-12": {
+   "capitulo": 1,
+   "nivel": 1,
+   "tipo": "laberinto-multiplos",
+   "titulo": "El camino de los múltiplos de 3",
+   "enunciado": "Ve de la casilla de arriba a la izquierda a la de abajo a la derecha (5×5 casillas) pisando solo múltiplos de 3. Te mueves en horizontal o en vertical, nunca en diagonal, y no pisas dos veces la misma casilla. Hay un único camino.",
+   "datos": {
+    "k": 3,
+    "rejilla": [
+     [
+      54,
+      42,
+      72,
+      93,
+      82
+     ],
+     [
+      94,
+      90,
+      38,
+      80,
+      63
+     ],
+     [
+      96,
+      93,
+      30,
+      86,
+      86
+     ],
+     [
+      36,
+      98,
+      19,
+      79,
+      38
+     ],
+     [
+      99,
+      12,
+      12,
+      15,
+      24
+     ]
+    ]
+   }
+  },
+  "M-01-13": {
+   "capitulo": 1,
+   "nivel": 2,
+   "tipo": "cerradura",
+   "titulo": "El candado de tres cifras",
+   "enunciado": "El candado tiene un código de 3 cifras distintas. Cada intento dice cuántas cifras están bien colocadas y cuántas son del código pero están en otro sitio. 765: una cifra está bien colocada. 083: una cifra está bien colocada. 648: una cifra es del código pero está mal colocada. 853: una cifra está bien colocada. 251: ninguna cifra es del código. ¿Cuál es el código?",
+   "datos": {
+    "n": 3,
+    "pistas": [
+     [
+      "765",
+      1,
+      0
+     ],
+     [
+      "083",
+      1,
+      0
+     ],
+     [
+      "648",
+      0,
+      1
+     ],
+     [
+      "853",
+      1,
+      0
+     ],
+     [
+      "251",
+      0,
+      0
+     ]
+    ]
+   }
+  },
+  "M-01-14": {
+   "capitulo": 1,
+   "nivel": 3,
+   "tipo": "criptoaritmetica",
+   "titulo": "Suma de palabras distintas",
+   "enunciado": "En la suma MONTE + ENTE = CANOA, cada letra es una cifra distinta y letras iguales son cifras iguales. Ninguna palabra empieza por 0. ¿Qué cifra es cada letra?",
+   "datos": {
+    "sumandos": [
+     "MONTE",
+     "ENTE"
+    ],
+    "resultado": "CANOA"
+   }
+  },
+  "M-01-15": {
+   "capitulo": 1,
+   "nivel": 1,
+   "tipo": "estimacion-calculo",
+   "titulo": "Repaso: estimar productos",
+   "enunciado": "Batalla de estimación por parejas. Para cada cuenta, cada jugador escribe una estimación en 10 segundos, sin calcular con lápiz: 58 × 5; 71 × 6; 916 : 5; 639 : 6. Después se calcula. Gana un punto quien quede a menos del 10 % del valor exacto; si los dos, quien esté más cerca. Si empatáis, ambos ganáis un punto.",
+   "datos": {
+    "ops": [
+     [
+      "x",
+      58,
+      5
+     ],
+     [
+      "x",
+      71,
+      6
+     ],
+     [
+      "/",
+      916,
+      5
+     ],
+     [
+      "/",
+      639,
+      6
+     ]
+    ],
+    "tolerancia": 10
+   }
+  },
+  "M-01-16": {
+   "capitulo": 1,
+   "nivel": 1,
+   "tipo": "rejilla-cifras",
+   "titulo": "Repaso: rejilla de cifras",
+   "enunciado": "Completa la rejilla de 4×4 con las cifras del 1 al 4. Cada cifra va una sola vez en cada fila, en cada columna y en cada caja de borde grueso (2×2).",
+   "datos": {
+    "n": 4,
+    "puzzle": [
+     [
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      3,
+      0,
+      0,
+      2
+     ],
+     [
+      0,
+      2,
+      0,
+      3
+     ],
+     [
+      1,
+      0,
+      0,
+      0
+     ]
+    ]
+   }
+  },
+  "M-02-01": {
+   "capitulo": 2,
+   "nivel": 1,
+   "tipo": "estimacion-calculo",
+   "titulo": "Batalla de estimación",
+   "enunciado": "Batalla de estimación por parejas. Para cada cuenta, cada jugador escribe una estimación en 10 segundos, sin calcular con lápiz: 47 × 9; 27 × 4; 414 : 8; 961 : 7; 64 × 8; 759 : 4. Después se calcula. Gana un punto quien quede a menos del 10 % del valor exacto; si los dos, quien esté más cerca. Si empatáis, ambos ganáis un punto.",
+   "datos": {
+    "ops": [
+     [
+      "x",
+      47,
+      9
+     ],
+     [
+      "x",
+      27,
+      4
+     ],
+     [
+      "/",
+      414,
+      8
+     ],
+     [
+      "/",
+      961,
+      7
+     ],
+     [
+      "x",
+      64,
+      8
+     ],
+     [
+      "/",
+      759,
+      4
+     ]
+    ],
+    "tolerancia": 10
+   }
+  },
+  "M-02-02": {
+   "capitulo": 2,
+   "nivel": 1,
+   "tipo": "estimacion-fermi",
+   "titulo": "¿Cuántas palabras tiene un libro?",
+   "enunciado": "Primero estima de cabeza el orden de magnitud: la potencia de 10 más cercana (¿10², 10³, 10⁶…?). Luego calcula. Un libro tiene 334 páginas, cada página 40 líneas y cada línea unas 9 palabras. ¿Cuántas palabras tiene el libro? Los datos del juego son supuestos, no medidos.",
+   "datos": {
+    "plantilla": "libro",
+    "p": {
+     "p": 334,
+     "l": 40,
+     "w": 9
+    }
+   }
+  },
+  "M-02-03": {
+   "capitulo": 2,
+   "nivel": 2,
+   "tipo": "estimacion-fermi",
+   "titulo": "El grifo que gotea",
+   "enunciado": "Primero estima de cabeza el orden de magnitud: la potencia de 10 más cercana (¿10², 10³, 10⁶…?). Luego calcula. Un grifo gotea 26 gotas por minuto y 20 gotas hacen 1 mL. ¿Cuántos litros pierde en un año de 365 días? Los datos del juego son supuestos, no medidos.",
+   "datos": {
+    "plantilla": "grifo",
+    "p": {
+     "g": 26,
+     "gml": 20
+    }
+   }
+  },
+  "M-02-04": {
+   "capitulo": 2,
+   "nivel": 2,
+   "tipo": "porcentajes-encadenados",
+   "titulo": "Sube y baja: ¿queda igual?",
+   "enunciado": "Unas zapatillas cuestan 101 €. El precio sube un 10 %, y luego baja un 40 %. Antes de calcular, apuesta: ¿acaban costando lo mismo, más o menos? Luego calcula el precio final y el cambio total en porcentaje.",
+   "datos": {
+    "precio": 101,
+    "cambios": [
+     10,
+     -40
+    ]
+   }
+  },
+  "M-02-05": {
+   "capitulo": 2,
+   "nivel": 2,
+   "tipo": "estimacion-raiz",
+   "titulo": "Raíces sin calculadora",
+   "enunciado": "Sin calculadora: ¿entre qué dos números enteros está la raíz cuadrada de 96, 146, 209 y 439? Estima cada una con una cifra decimal. Después comprueba con la calculadora y anota cuánto te has desviado.",
+   "datos": {
+    "numeros": [
+     96,
+     146,
+     209,
+     439
+    ]
+   }
+  },
+  "M-02-06": {
+   "capitulo": 2,
+   "nivel": 1,
+   "tipo": "estimacion-fermi",
+   "titulo": "Los latidos de un año",
+   "enunciado": "Primero estima de cabeza el orden de magnitud: la potencia de 10 más cercana (¿10², 10³, 10⁶…?). Luego calcula. Un corazón late unas 72 veces por minuto. ¿Cuántas veces late en un día? ¿Y en un año de 365 días? Los datos del juego son supuestos, no medidos.",
+   "datos": {
+    "plantilla": "corazon",
+    "p": {
+     "lat": 72
+    }
+   }
+  },
+  "M-02-07": {
+   "capitulo": 2,
+   "nivel": 2,
+   "tipo": "estimacion-calculo",
+   "titulo": "Estimación con porcentajes",
+   "enunciado": "Batalla de estimación por parejas. Para cada cuenta, cada jugador escribe una estimación en 10 segundos, sin calcular con lápiz: el 12 % de 466; 973 : 8; 20 × 44; 488 : 9; 187 : 4; 66 × 89. Después se calcula. Gana un punto quien quede a menos del 10 % del valor exacto; si los dos, quien esté más cerca. Si empatáis, ambos ganáis un punto.",
+   "datos": {
+    "ops": [
+     [
+      "%",
+      12,
+      466
+     ],
+     [
+      "/",
+      973,
+      8
+     ],
+     [
+      "x",
+      20,
+      44
+     ],
+     [
+      "/",
+      488,
+      9
+     ],
+     [
+      "/",
+      187,
+      4
+     ],
+     [
+      "x",
+      66,
+      89
+     ]
+    ],
+    "tolerancia": 10
+   }
+  },
+  "M-02-08": {
+   "capitulo": 2,
+   "nivel": 3,
+   "tipo": "porcentajes-encadenados",
+   "titulo": "Tres cambios de precio seguidos",
+   "enunciado": "Unas zapatillas cuestan 63 €. El precio sube un 10 %, y luego baja un 20 %, y luego sube un 40 %. Antes de calcular, apuesta: ¿acaban costando lo mismo, más o menos? Luego calcula el precio final y el cambio total en porcentaje.",
+   "datos": {
+    "precio": 63,
+    "cambios": [
+     10,
+     -20,
+     40
+    ]
+   }
+  },
+  "M-02-09": {
+   "capitulo": 2,
+   "nivel": 1,
+   "tipo": "cuadrado-magico",
+   "titulo": "Repaso: cuadrado mágico",
+   "enunciado": "Coloca los números 1, 2, 3, 4, 5, 6, 7, 8 y 9 en el cuadrado de 3×3, cada uno una vez, para que todas las filas, todas las columnas y las dos diagonales sumen lo mismo. Algunos ya están puestos.",
+   "datos": {
+    "n": 3,
+    "numeros": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "puzzle": [
+     [
+      0,
+      7,
+      6
+     ],
+     [
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      3,
+      0
+     ]
+    ]
+   }
+  },
+  "M-02-10": {
+   "capitulo": 2,
+   "nivel": 2,
+   "tipo": "rejilla-jaulas",
+   "titulo": "Repaso: jaulas",
+   "enunciado": "Completa la rejilla de 4×4 con las cifras del 1 al 4, sin repetir ninguna en una fila ni en una columna. Cada jaula (zona de borde grueso) lleva un número y una operación (división, multiplicación, resta y suma): sus cifras, operadas, dan ese número. En la resta y en la división se empieza por la cifra mayor. Una jaula de una sola casilla lleva solo un número: esa es su cifra. Dentro de una jaula sí se pueden repetir cifras si están en filas y columnas distintas.",
+   "datos": {
+    "n": 4,
+    "jaulas": [
+     {
+      "celdas": [
+       [
+        1,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        2,
+        3
+       ]
+      ],
+      "op": "x",
+      "valor": 6
+     },
+     {
+      "celdas": [
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        3
+       ]
+      ],
+      "op": "+",
+      "valor": 3
+     },
+     {
+      "celdas": [
+       [
+        3,
+        0
+       ],
+       [
+        3,
+        1
+       ]
+      ],
+      "op": "+",
+      "valor": 3
+     },
+     {
+      "celdas": [
+       [
+        1,
+        0
+       ],
+       [
+        1,
+        1
+       ]
+      ],
+      "op": "/",
+      "valor": 4
+     },
+     {
+      "celdas": [
+       [
+        2,
+        1
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        3,
+        2
+       ]
+      ],
+      "op": "x",
+      "valor": 24
+     },
+     {
+      "celdas": [
+       [
+        0,
+        0
+       ],
+       [
+        0,
+        1
+       ]
+      ],
+      "op": "-",
+      "valor": 1
+     },
+     {
+      "celdas": [
+       [
+        3,
+        3
+       ]
+      ],
+      "op": "=",
+      "valor": 4
+     },
+     {
+      "celdas": [
+       [
+        2,
+        0
+       ]
+      ],
+      "op": "=",
+      "valor": 3
+     }
+    ]
+   }
+  },
+  "M-03-01": {
+   "capitulo": 3,
+   "nivel": 1,
+   "tipo": "area-cuadricula",
+   "titulo": "La L en la cuadrícula",
+   "enunciado": "Dibuja en papel cuadriculado el polígono de vértices (3, 3) (7, 3) (7, 5) (5, 5) (5, 8) (3, 8), en ese orden, y calcula su área en cuadritos. Truco: rodéalo con un rectángulo y resta las piezas que sobran; parte cada pieza en rectángulos y triángulos rectángulos.",
+   "datos": {
+    "figura": "L",
+    "vertices": [
+     [
+      3,
+      3
+     ],
+     [
+      7,
+      3
+     ],
+     [
+      7,
+      5
+     ],
+     [
+      5,
+      5
+     ],
+     [
+      5,
+      8
+     ],
+     [
+      3,
+      8
+     ]
+    ],
+    "con_pick": false
+   }
+  },
+  "M-03-02": {
+   "capitulo": 3,
+   "nivel": 1,
+   "tipo": "coordenadas-tesoro",
+   "titulo": "El tesoro en los ejes",
+   "enunciado": "El tesoro está en un punto de coordenadas enteras, con x e y entre −5 y 5. x + y = −2. x − y = 2. ¿Dónde está? Márcalo en unos ejes.",
+   "datos": {
+    "r": 5,
+    "pistas": [
+     [
+      "suma",
+      -2
+     ],
+     [
+      "resta",
+      2
+     ]
+    ]
+   }
+  },
+  "M-03-03": {
+   "capitulo": 3,
+   "nivel": 1,
+   "tipo": "transformacion",
+   "titulo": "Espejo en el eje Y",
+   "enunciado": "Dibuja la figura de vértices A(4, 2), B(3, 5), C(1, 5). Aplícale la simetría respecto al eje Y y escribe las coordenadas de la imagen de cada vértice.",
+   "datos": {
+    "transf": "sim_y",
+    "puntos": [
+     [
+      4,
+      2
+     ],
+     [
+      3,
+      5
+     ],
+     [
+      1,
+      5
+     ]
+    ],
+    "vector": []
+   }
+  },
+  "M-03-04": {
+   "capitulo": 3,
+   "nivel": 2,
+   "tipo": "pitagoras",
+   "titulo": "¿Cuál es rectángulo?",
+   "enunciado": "Solo uno de estos triángulos es rectángulo. ¿Cuál? Lados: A: 19, 80 y 83 cm; B: 18, 80 y 82 cm; C: 19, 79 y 82 cm; D: 20, 81 y 81 cm.",
+   "datos": {
+    "variante": "cual",
+    "triangulos": [
+     [
+      19,
+      80,
+      83
+     ],
+     [
+      18,
+      80,
+      82
+     ],
+     [
+      19,
+      79,
+      82
+     ],
+     [
+      20,
+      81,
+      81
+     ]
+    ]
+   }
+  },
+  "M-03-05": {
+   "capitulo": 3,
+   "nivel": 2,
+   "tipo": "teselado-vertice",
+   "titulo": "Polígonos alrededor de un punto",
+   "enunciado": "Tienes triángulos, cuadrados, hexágonos y dodecágonos regulares, todos con el mismo lado. ¿Qué grupos de polígonos (pueden repetirse) encajan alrededor de un punto sin dejar huecos ni montarse? Calcula el ángulo interior de cada uno: los ángulos tienen que sumar 360°.",
+   "datos": {
+    "poligonos": [
+     3,
+     4,
+     6,
+     12
+    ]
+   }
+  },
+  "M-03-06": {
+   "capitulo": 3,
+   "nivel": 2,
+   "tipo": "angulos-poligono",
+   "titulo": "¿Cuántos lados tiene?",
+   "enunciado": "Tres polígonos regulares tienen ángulos interiores de 156°, 150° y 144°. ¿Cuántos lados tiene cada uno? ¿Cuánto suman todos sus ángulos interiores? Pista: mira el ángulo exterior.",
+   "datos": {
+    "angulos": [
+     "156",
+     "150",
+     "144"
+    ]
+   }
+  },
+  "M-03-07": {
+   "capitulo": 3,
+   "nivel": 2,
+   "tipo": "transformacion",
+   "titulo": "Un cuarto de vuelta",
+   "enunciado": "Dibuja la figura de vértices A(3, 3), B(4, 2), C(3, 2). Aplícale un giro de 90° en sentido contrario a las agujas del reloj con centro en el origen y escribe las coordenadas de la imagen de cada vértice.",
+   "datos": {
+    "transf": "giro90",
+    "puntos": [
+     [
+      3,
+      3
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      3,
+      2
+     ]
+    ],
+    "vector": []
+   }
+  },
+  "M-03-08": {
+   "capitulo": 3,
+   "nivel": 3,
+   "tipo": "area-cuadricula",
+   "titulo": "La estrella y los puntos",
+   "enunciado": "Dibuja en papel cuadriculado el polígono de vértices (3, 0) (4, 2) (6, 2) (4, 3) (5, 5) (3, 4) (1, 5) (2, 3) (1, 2) (2, 2), en ese orden, y calcula su área en cuadritos. Truco: rodéalo con un rectángulo y resta las piezas que sobran; parte cada pieza en rectángulos y triángulos rectángulos. Cuenta también los puntos de la cuadrícula que quedan en el borde y dentro: ¿se cumple que área = dentro + borde/2 − 1?",
+   "datos": {
+    "figura": "estrella",
+    "vertices": [
+     [
+      3,
+      0
+     ],
+     [
+      4,
+      2
+     ],
+     [
+      6,
+      2
+     ],
+     [
+      4,
+      3
+     ],
+     [
+      5,
+      5
+     ],
+     [
+      3,
+      4
+     ],
+     [
+      1,
+      5
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      2,
+      2
+     ]
+    ],
+    "con_pick": true
+   }
+  },
+  "M-03-09": {
+   "capitulo": 3,
+   "nivel": 2,
+   "tipo": "dibujo-oculto",
+   "titulo": "El símbolo escondido",
+   "enunciado": "Pinta casillas de la rejilla de 8×8. Los números de cada fila y de cada columna dicen, en orden, cuántas casillas seguidas se pintan; entre dos grupos hay al menos una casilla en blanco. Al final aparece un símbolo de matemáticas.",
+   "datos": {
+    "filas": [
+     [
+      8
+     ],
+     [
+      8
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      2,
+      2
+     ],
+     [
+      1,
+      3
+     ]
+    ],
+    "cols": [
+     [
+      2,
+      2
+     ],
+     [
+      7
+     ],
+     [
+      6
+     ],
+     [
+      2
+     ],
+     [
+      2
+     ],
+     [
+      8
+     ],
+     [
+      8
+     ],
+     [
+      2,
+      1
+     ]
+    ]
+   }
+  },
+  "M-03-10": {
+   "capitulo": 3,
+   "nivel": 2,
+   "tipo": "area-cuadricula",
+   "titulo": "El trapecio",
+   "enunciado": "Dibuja en papel cuadriculado el polígono de vértices (3, 3) (9, 3) (7, 6) (4, 6), en ese orden, y calcula su área en cuadritos.",
+   "datos": {
+    "figura": "trapecio",
+    "vertices": [
+     [
+      3,
+      3
+     ],
+     [
+      9,
+      3
+     ],
+     [
+      7,
+      6
+     ],
+     [
+      4,
+      6
+     ]
+    ],
+    "con_pick": false
+   }
+  },
+  "M-03-11": {
+   "capitulo": 3,
+   "nivel": 3,
+   "tipo": "pitagoras",
+   "titulo": "La escalera",
+   "enunciado": "Una escalera de 130 cm está apoyada en una pared. Su pie está a 50 cm de la pared. ¿A qué altura toca la pared? Haz primero un dibujo y una estimación.",
+   "datos": {
+    "variante": "escalera",
+    "largo": 130,
+    "pie": 50
+   }
+  },
+  "M-03-12": {
+   "capitulo": 3,
+   "nivel": 1,
+   "tipo": "coordenadas-tesoro",
+   "titulo": "Segundo tesoro",
+   "enunciado": "El tesoro está en un punto de coordenadas enteras, con x e y entre −5 y 5. Está a 13 pasos de (5, −3), contando solo pasos horizontales y verticales. x + y = −1. ¿Dónde está? Márcalo en unos ejes.",
+   "datos": {
+    "r": 5,
+    "pistas": [
+     [
+      "pasos",
+      5,
+      -3,
+      13
+     ],
+     [
+      "suma",
+      -1
+     ]
+    ]
+   }
+  },
+  "M-03-13": {
+   "capitulo": 3,
+   "nivel": 1,
+   "tipo": "triangulo-magico",
+   "titulo": "Repaso: triángulo mágico",
+   "enunciado": "Coloca los números 4, 5, 6, 7, 8 y 9 en los seis círculos del triángulo (tres en los vértices y tres en medio de los lados), cada uno una vez, para que cada lado sume 18. Los números ya escritos no se mueven.",
+   "datos": {
+    "numeros": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "suma": 18,
+    "dados": [
+     0,
+     0,
+     4,
+     9,
+     0,
+     0
+    ]
+   }
+  },
+  "M-03-14": {
+   "capitulo": 3,
+   "nivel": 1,
+   "tipo": "porcentajes-encadenados",
+   "titulo": "Repaso: porcentajes",
+   "enunciado": "Unas zapatillas cuestan 69 €. El precio sube un 30 %, y luego baja un 30 %. Antes de calcular, apuesta: ¿acaban costando lo mismo, más o menos? Luego calcula el precio final y el cambio total en porcentaje.",
+   "datos": {
+    "precio": 69,
+    "cambios": [
+     30,
+     -30
+    ]
+   }
+  },
+  "M-04-01": {
+   "capitulo": 4,
+   "nivel": 1,
+   "tipo": "balanza",
+   "titulo": "Balanzas de dos figuras",
+   "enunciado": "Todas las figuras iguales pesan lo mismo, y cada peso es un número entero de gramos entre 1 y 20 (círculos y cuadrados). Balanza 1: 2 círculos y 3 cuadrados pesan 46 g. Balanza 2: 1 círculo y 1 cuadrado pesan 17 g. ¿Cuánto pesa cada figura?",
+   "datos": {
+    "n": 2,
+    "ecuaciones": [
+     [
+      2,
+      3,
+      46
+     ],
+     [
+      1,
+      1,
+      17
+     ]
+    ]
+   }
+  },
+  "M-04-02": {
+   "capitulo": 4,
+   "nivel": 1,
+   "tipo": "piensa-numero",
+   "titulo": "Siempre sale lo mismo",
+   "enunciado": "Piensa un número entero. Multiplícalo por 3, súmale 24, divide entre 3, réstale el número que pensaste. Prueba con tres números distintos: ¿qué observas? Llama n al número pensado y demuestra con álgebra por qué pasa siempre.",
+   "datos": {
+    "variante": "constante",
+    "ops": [
+     [
+      "x",
+      3
+     ],
+     [
+      "+",
+      24
+     ],
+     [
+      "/",
+      3
+     ],
+     [
+      "-n"
+     ]
+    ]
+   }
+  },
+  "M-04-03": {
+   "capitulo": 4,
+   "nivel": 1,
+   "tipo": "ecuacion-texto",
+   "titulo": "El perímetro del rectángulo",
+   "enunciado": "Un rectángulo mide 6 cm más de largo que de ancho y su perímetro es 36 cm. ¿Cuánto mide de ancho y cuánto de largo?",
+   "datos": {
+    "k": 6,
+    "P": 36,
+    "plantilla": "perimetro",
+    "ecuacion": [
+     4,
+     12,
+     0,
+     36
+    ]
+   }
+  },
+  "M-04-04": {
+   "capitulo": 4,
+   "nivel": 2,
+   "tipo": "balanza",
+   "titulo": "Balanzas de tres figuras",
+   "enunciado": "Todas las figuras iguales pesan lo mismo, y cada peso es un número entero de gramos entre 1 y 20 (círculos, cuadrados y triángulos). Balanza 1: 3 círculos, 3 cuadrados y 3 triángulos pesan 42 g. Balanza 2: 1 círculo, 3 cuadrados y 1 triángulo pesan 18 g. Balanza 3: 1 círculo, 1 cuadrado y 2 triángulos pesan 22 g. ¿Cuánto pesa cada figura?",
+   "datos": {
+    "n": 3,
+    "ecuaciones": [
+     [
+      3,
+      3,
+      3,
+      42
+     ],
+     [
+      1,
+      3,
+      1,
+      18
+     ],
+     [
+      1,
+      1,
+      2,
+      22
+     ]
+    ]
+   }
+  },
+  "M-04-05": {
+   "capitulo": 4,
+   "nivel": 2,
+   "tipo": "ecuacion-texto",
+   "titulo": "Números consecutivos",
+   "enunciado": "La suma de 5 números enteros consecutivos es 280. ¿Cuáles son? Llama x al menor.",
+   "datos": {
+    "m": 5,
+    "S": 280,
+    "plantilla": "consecutivos",
+    "ecuacion": [
+     5,
+     10,
+     0,
+     280
+    ]
+   }
+  },
+  "M-04-06": {
+   "capitulo": 4,
+   "nivel": 2,
+   "tipo": "patron-figuras",
+   "titulo": "Cuadrados de palillos",
+   "enunciado": "Con palillos se construye una fila de cuadrados pegados. La figura 1 usa 4 palillos, la 2 usa 7 y la 3 usa 10. ¿Cuántos palillos usa la figura 30? ¿Qué figura usa exactamente 172 palillos? Escribe la regla para la figura n.",
+   "datos": {
+    "figura": "cuadrados",
+    "descripcion": "una fila de cuadrados pegados",
+    "terminos": [
+     4,
+     7,
+     10
+    ],
+    "N": 30,
+    "T": 172
+   }
+  },
+  "M-04-07": {
+   "capitulo": 4,
+   "nivel": 3,
+   "tipo": "piensa-numero",
+   "titulo": "El truco del adivino",
+   "enunciado": "Truco de adivinación: pide a alguien que piense un número, y luego: multiplícalo por 4, súmale 3, multiplícalo por 4, réstale 44, divide entre 16. Te dice el resultado. ¿Qué tienes que hacer con ese resultado para adivinar su número? Demuéstralo con álgebra.",
+   "datos": {
+    "variante": "adivina",
+    "ops": [
+     [
+      "x",
+      4
+     ],
+     [
+      "+",
+      3
+     ],
+     [
+      "x",
+      4
+     ],
+     [
+      "-",
+      44
+     ],
+     [
+      "/",
+      16
+     ]
+    ]
+   }
+  },
+  "M-04-08": {
+   "capitulo": 4,
+   "nivel": 2,
+   "tipo": "ecuacion-texto",
+   "titulo": "Edades",
+   "enunciado": "Hoy, Marta tiene 5 veces la edad de su sobrino Leo. Dentro de 18 años tendrá 2 veces la edad que tenga Leo entonces. ¿Cuántos años tiene Leo hoy? Escribe la ecuación antes de resolverla.",
+   "datos": {
+    "k1": 5,
+    "k2": 2,
+    "t": 18,
+    "plantilla": "edades",
+    "ecuacion": [
+     5,
+     18,
+     2,
+     36
+    ]
+   }
+  },
+  "M-04-09": {
+   "capitulo": 4,
+   "nivel": 3,
+   "tipo": "patron-figuras",
+   "titulo": "Casas de palillos",
+   "enunciado": "Con palillos se construye una fila de casas pegadas (un cuadrado con tejado de dos palillos). La figura 1 usa 6 palillos, la 2 usa 11 y la 3 usa 16. ¿Cuántos palillos usa la figura 23? ¿Qué figura usa exactamente 371 palillos? Escribe la regla para la figura n.",
+   "datos": {
+    "figura": "casas",
+    "descripcion": "una fila de casas pegadas (un cuadrado con tejado de dos palillos)",
+    "terminos": [
+     6,
+     11,
+     16
+    ],
+    "N": 23,
+    "T": 371
+   }
+  },
+  "M-04-10": {
+   "capitulo": 4,
+   "nivel": 1,
+   "tipo": "balanza",
+   "titulo": "Balanza de control",
+   "enunciado": "Todas las figuras iguales pesan lo mismo, y cada peso es un número entero de gramos entre 1 y 20 (círculos y cuadrados). Balanza 1: 2 círculos y 2 cuadrados pesan 28 g. Balanza 2: 2 círculos y 3 cuadrados pesan 30 g. ¿Cuánto pesa cada figura?",
+   "datos": {
+    "n": 2,
+    "ecuaciones": [
+     [
+      2,
+      2,
+      28
+     ],
+     [
+      2,
+      3,
+      30
+     ]
+    ]
+   }
+  },
+  "M-04-11": {
+   "capitulo": 4,
+   "nivel": 2,
+   "tipo": "area-cuadricula",
+   "titulo": "Repaso: la casa",
+   "enunciado": "Dibuja en papel cuadriculado el polígono de vértices (1, 1) (5, 1) (5, 4) (3, 6) (1, 4), en ese orden, y calcula su área en cuadritos.",
+   "datos": {
+    "figura": "casa",
+    "vertices": [
+     [
+      1,
+      1
+     ],
+     [
+      5,
+      1
+     ],
+     [
+      5,
+      4
+     ],
+     [
+      3,
+      6
+     ],
+     [
+      1,
+      4
+     ]
+    ],
+    "con_pick": false
+   }
+  },
+  "M-04-12": {
+   "capitulo": 4,
+   "nivel": 1,
+   "tipo": "rejilla-jaulas",
+   "titulo": "Repaso: jaulas que suman",
+   "enunciado": "Completa la rejilla de 4×4 con las cifras del 1 al 4, sin repetir ninguna en una fila ni en una columna. Cada jaula (zona de borde grueso) lleva un número y una operación (suma): sus cifras, operadas, dan ese número. Una jaula de una sola casilla lleva solo un número: esa es su cifra. Dentro de una jaula sí se pueden repetir cifras si están en filas y columnas distintas.",
+   "datos": {
+    "n": 4,
+    "jaulas": [
+     {
+      "celdas": [
+       [
+        1,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        2,
+        2
+       ]
+      ],
+      "op": "+",
+      "valor": 6
+     },
+     {
+      "celdas": [
+       [
+        0,
+        0
+       ],
+       [
+        0,
+        1
+       ]
+      ],
+      "op": "+",
+      "valor": 3
+     },
+     {
+      "celdas": [
+       [
+        2,
+        3
+       ],
+       [
+        3,
+        3
+       ]
+      ],
+      "op": "+",
+      "valor": 6
+     },
+     {
+      "celdas": [
+       [
+        3,
+        0
+       ]
+      ],
+      "op": "=",
+      "valor": 4
+     },
+     {
+      "celdas": [
+       [
+        1,
+        1
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        3,
+        1
+       ]
+      ],
+      "op": "+",
+      "valor": 9
+     },
+     {
+      "celdas": [
+       [
+        0,
+        2
+       ],
+       [
+        0,
+        3
+       ]
+      ],
+      "op": "+",
+      "valor": 7
+     },
+     {
+      "celdas": [
+       [
+        3,
+        2
+       ]
+      ],
+      "op": "=",
+      "valor": 1
+     },
+     {
+      "celdas": [
+       [
+        1,
+        0
+       ],
+       [
+        2,
+        0
+       ]
+      ],
+      "op": "+",
+      "valor": 4
+     }
+    ]
+   }
+  },
+  "M-05-01": {
+   "capitulo": 5,
+   "nivel": 1,
+   "tipo": "dados-justo",
+   "titulo": "¿Es justo con la suma?",
+   "enunciado": "Ana y Bea tiran dos dados normales y miran la suma de los dos. Ana gana si sale 6 o menos; Bea gana si sale más de 7; si no gana ninguna, se vuelve a tirar. Antes de calcular, juega 20 tiradas y apunta. ¿Es un juego justo? Haz la tabla de las 36 tiradas posibles.",
+   "datos": {
+    "op": "suma",
+    "A": [
+     "menor_igual",
+     6
+    ],
+    "B": [
+     "mayor",
+     7
+    ]
+   }
+  },
+  "M-05-02": {
+   "capitulo": 5,
+   "nivel": 1,
+   "tipo": "carrera-n",
+   "titulo": "Carrera contra la IA",
+   "enunciado": "Carrera al 21. Dos jugadores dicen números por turnos. El primero dice un número del 1 al 4; cada uno, en su turno, suma al número anterior entre 1 y 4. Gana quien diga 21. ¿Te conviene empezar? ¿Qué números tienes que decir para ganar seguro?",
+   "datos": {
+    "N": 21,
+    "k": 4
+   }
+  },
+  "M-05-03": {
+   "capitulo": 5,
+   "nivel": 2,
+   "tipo": "suma-probable",
+   "titulo": "La suma favorita de dos dados",
+   "enunciado": "Tiras dos dados de 6 caras y sumas. ¿Qué suma o sumas salen con más probabilidad? ¿Con qué probabilidad? Apuesta primero, luego cuenta todos los casos posibles con una tabla o un árbol.",
+   "datos": {
+    "dados": [
+     6,
+     6
+    ]
+   }
+  },
+  "M-05-04": {
+   "capitulo": 5,
+   "nivel": 2,
+   "tipo": "nim",
+   "titulo": "Montones contra la IA",
+   "enunciado": "Hay tres montones con 2, 3 y 5 fichas. Por turnos, cada jugador quita todas las que quiera (al menos una) de un solo montón. Gana quien se lleve la última ficha. ¿Te conviene empezar? Si sí, ¿qué primeras jugadas te hacen ganar? Puede haber más de una.",
+   "datos": {
+    "montones": [
+     2,
+     3,
+     5
+    ]
+   }
+  },
+  "M-05-05": {
+   "capitulo": 5,
+   "nivel": 2,
+   "tipo": "urnas-laplace",
+   "titulo": "¿De qué bolsa saco?",
+   "enunciado": "Bolsa 1: 2 bolas rojas y 4 azules. Bolsa 2: 7 rojas y 15 azules. Sacas una bola sin mirar y ganas si es roja. ¿De qué bolsa te conviene sacar? Ojo: no basta con mirar qué bolsa tiene más rojas.",
+   "datos": {
+    "bolsa1": [
+     2,
+     4
+    ],
+    "bolsa2": [
+     7,
+     15
+    ]
+   }
+  },
+  "M-05-06": {
+   "capitulo": 5,
+   "nivel": 3,
+   "tipo": "dados-no-transitivos",
+   "titulo": "Dados que se ganan en círculo",
+   "enunciado": "Tres dados especiales: A tiene 1, 3, 12, 13, 14, 16; B tiene 6, 7, 8, 9, 11, 15; C tiene 2, 4, 5, 10, 17, 18. Tu rival elige un dado, tú eliges otro, y gana quien saque más. Calcula P(A gana a B), P(B gana a C) y P(C gana a A) con tablas de 6 × 6. ¿Hay un dado que sea el mejor?",
+   "datos": {
+    "A": [
+     1,
+     3,
+     12,
+     13,
+     14,
+     16
+    ],
+    "B": [
+     6,
+     7,
+     8,
+     9,
+     11,
+     15
+    ],
+    "C": [
+     2,
+     4,
+     5,
+     10,
+     17,
+     18
+    ]
+   }
+  },
+  "M-05-07": {
+   "capitulo": 5,
+   "nivel": 1,
+   "tipo": "dados-justo",
+   "titulo": "¿Es justo con el producto?",
+   "enunciado": "Ana y Bea tiran dos dados normales y miran el producto de los dos. Ana gana si sale 9 o menos; Bea gana si sale más de 9. Antes de calcular, juega 20 tiradas y apunta. ¿Es un juego justo? Haz la tabla de las 36 tiradas posibles.",
+   "datos": {
+    "op": "producto",
+    "A": [
+     "menor_igual",
+     9
+    ],
+    "B": [
+     "mayor",
+     9
+    ]
+   }
+  },
+  "M-05-08": {
+   "capitulo": 5,
+   "nivel": 2,
+   "tipo": "dados-justo",
+   "titulo": "¿Es justo con la diferencia?",
+   "enunciado": "Ana y Bea tiran dos dados normales y miran la diferencia (el mayor menos el menor) de los dos. Ana gana si sale 1 o menos; Bea gana si sale más de 1. Antes de calcular, juega 20 tiradas y apunta. ¿Es un juego justo? Justifica la respuesta.",
+   "datos": {
+    "op": "diferencia",
+    "A": [
+     "menor_igual",
+     1
+    ],
+    "B": [
+     "mayor",
+     1
+    ]
+   }
+  },
+  "M-05-09": {
+   "capitulo": 5,
+   "nivel": 1,
+   "tipo": "carrera-n",
+   "titulo": "Carrera al número",
+   "enunciado": "Carrera al 15. Dos jugadores dicen números por turnos. El primero dice un número del 1 al 3; cada uno, en su turno, suma al número anterior entre 1 y 3. Gana quien diga 15. ¿Te conviene empezar? ¿Qué números tienes que decir para ganar seguro?",
+   "datos": {
+    "N": 15,
+    "k": 3
+   }
+  },
+  "M-05-10": {
+   "capitulo": 5,
+   "nivel": 3,
+   "tipo": "nim",
+   "titulo": "Cuatro montones",
+   "enunciado": "Hay cuatro montones con 2, 3, 5 y 6 fichas. Por turnos, cada jugador quita todas las que quiera (al menos una) de un solo montón. Gana quien se lleve la última ficha. ¿Te conviene empezar? Si sí, ¿qué primeras jugadas te hacen ganar? Puede haber más de una.",
+   "datos": {
+    "montones": [
+     2,
+     3,
+     5,
+     6
+    ]
+   }
+  },
+  "M-05-11": {
+   "capitulo": 5,
+   "nivel": 1,
+   "tipo": "balanza",
+   "titulo": "Repaso: balanzas",
+   "enunciado": "Todas las figuras iguales pesan lo mismo, y cada peso es un número entero de gramos entre 1 y 20 (círculos y cuadrados). Balanza 1: 1 círculo y 1 cuadrado pesan 15 g. Balanza 2: 2 círculos y 1 cuadrado pesan 22 g. ¿Cuánto pesa cada figura?",
+   "datos": {
+    "n": 2,
+    "ecuaciones": [
+     [
+      1,
+      1,
+      15
+     ],
+     [
+      2,
+      1,
+      22
+     ]
+    ]
+   }
+  },
+  "M-05-12": {
+   "capitulo": 5,
+   "nivel": 2,
+   "tipo": "pitagoras",
+   "titulo": "Repaso: ¿cuál es rectángulo?",
+   "enunciado": "Solo uno de estos triángulos es rectángulo. ¿Cuál? Lados: A: 11, 23 y 27 cm; B: 10, 24 y 26 cm; C: 11, 25 y 27 cm; D: 9, 25 y 26 cm.",
+   "datos": {
+    "variante": "cual",
+    "triangulos": [
+     [
+      11,
+      23,
+      27
+     ],
+     [
+      10,
+      24,
+      26
+     ],
+     [
+      11,
+      25,
+      27
+     ],
+     [
+      9,
+      25,
+      26
+     ]
+    ]
+   }
+  },
+  "M-06-01": {
+   "capitulo": 6,
+   "nivel": 1,
+   "tipo": "mapa-escala",
+   "titulo": "El mapa de la excursión",
+   "enunciado": "Un mapa tiene escala 1:50 000. Mides con la regla tres caminos: 6,9 cm, 11,2 cm y 10,7 cm. ¿Cuántos kilómetros mide cada uno en la realidad? Estima primero: ¿cuántos metros son 1 cm del mapa?",
+   "datos": {
+    "escala": 50000,
+    "medidas_cm": [
+     "6,9",
+     "11,2",
+     "10,7"
+    ]
+   }
+  },
+  "M-06-02": {
+   "capitulo": 6,
+   "nivel": 1,
+   "tipo": "datos-tabla",
+   "titulo": "Libros del verano",
+   "enunciado": "En una clase se preguntó por los libros leídos en verano. Respuestas: 3 libros, 1 alumno; 4 libros, 4 alumnos; 5 libros, 3 alumnos; 6 libros, 9 alumnos; 7 libros, 2 alumnos. ¿Cuántos alumnos respondieron? Calcula la media, la mediana y la moda. ¿Cuál describe mejor a la clase?",
+   "datos": {
+    "valores": [
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "frecuencias": [
+     1,
+     4,
+     3,
+     9,
+     2
+    ],
+    "variable": "libros leídos en verano"
+   }
+  },
+  "M-06-03": {
+   "capitulo": 6,
+   "nivel": 2,
+   "tipo": "detective-datos",
+   "titulo": "Detective de datos",
+   "enunciado": "Cinco números enteros del 1 al 10 (se pueden repetir) tienen media 3,6, mediana 3, moda 3 (es el único que se repite más) y rango 8. ¿Cuáles son? Ordénalos de menor a mayor.",
+   "datos": {
+    "pistas": {
+     "media": "18/5",
+     "mediana": 3,
+     "moda": 3,
+     "rango": 8
+    }
+   }
+  },
+  "M-06-04": {
+   "capitulo": 6,
+   "nivel": 2,
+   "tipo": "recorrido-puentes",
+   "titulo": "Paseo por los puentes",
+   "enunciado": "Una ciudad tiene 4 barrios (A, B, C, D) unidos por 7 puentes: C–D, A–C, B–D, B–D, A–B, B–D, B–D. ¿Puedes dar un paseo que cruce cada puente exactamente una vez? ¿Desde qué barrios puedes empezar? Cuenta cuántos puentes salen de cada barrio: ¿ves alguna regla?",
+   "datos": {
+    "zonas": [
+     "A",
+     "B",
+     "C",
+     "D"
+    ],
+    "puentes": [
+     [
+      "C",
+      "D"
+     ],
+     [
+      "A",
+      "C"
+     ],
+     [
+      "B",
+      "D"
+     ],
+     [
+      "B",
+      "D"
+     ],
+     [
+      "A",
+      "B"
+     ],
+     [
+      "B",
+      "D"
+     ],
+     [
+      "B",
+      "D"
+     ]
+    ]
+   }
+  },
+  "M-06-05": {
+   "capitulo": 6,
+   "nivel": 2,
+   "tipo": "datos-tabla",
+   "titulo": "¿Media o mediana?",
+   "enunciado": "En una clase se preguntó por los libros leídos en verano. Respuestas: 2 libros, 3 alumnos; 3 libros, 3 alumnos; 4 libros, 5 alumnos; 5 libros, 6 alumnos; 6 libros, 9 alumnos. ¿Cuántos alumnos respondieron? Calcula la media, la mediana y la moda. ¿Cuál describe mejor a la clase?",
+   "datos": {
+    "valores": [
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "frecuencias": [
+     3,
+     3,
+     5,
+     6,
+     9
+    ],
+    "variable": "libros leídos en verano"
+   }
+  },
+  "M-06-06": {
+   "capitulo": 6,
+   "nivel": 3,
+   "tipo": "detective-datos",
+   "titulo": "Cinco números escondidos",
+   "enunciado": "Cinco números enteros del 1 al 10 (se pueden repetir) tienen media 5, mediana 3, moda 3 (es el único que se repite más) y rango 8. ¿Cuáles son? Ordénalos de menor a mayor.",
+   "datos": {
+    "pistas": {
+     "media": "5",
+     "mediana": 3,
+     "moda": 3,
+     "rango": 8
+    }
+   }
+  },
+  "M-06-07": {
+   "capitulo": 6,
+   "nivel": 1,
+   "tipo": "mapa-escala",
+   "titulo": "Otra escala",
+   "enunciado": "Un mapa tiene escala 1:25 000. Mides con la regla tres caminos: 11,7 cm, 8,3 cm y 11,3 cm. ¿Cuántos kilómetros mide cada uno en la realidad?",
+   "datos": {
+    "escala": 25000,
+    "medidas_cm": [
+     "11,7",
+     "8,3",
+     "11,3"
+    ]
+   }
+  },
+  "M-06-08": {
+   "capitulo": 6,
+   "nivel": 1,
+   "tipo": "colorear-mapa",
+   "titulo": "Pocos colores",
+   "enunciado": "Un mapa tiene 5 regiones. Comparten frontera: A–B, A–D, A–E, B–C, B–D, C–D, D–E. Dos regiones con frontera no pueden tener el mismo color. ¿Cuál es el menor número de colores con el que puedes pintarlo? Demuestra que con uno menos no se puede.",
+   "datos": {
+    "regiones": [
+     "A",
+     "B",
+     "C",
+     "D",
+     "E"
+    ],
+    "fronteras": [
+     [
+      "A",
+      "B"
+     ],
+     [
+      "A",
+      "D"
+     ],
+     [
+      "A",
+      "E"
+     ],
+     [
+      "B",
+      "C"
+     ],
+     [
+      "B",
+      "D"
+     ],
+     [
+      "C",
+      "D"
+     ],
+     [
+      "D",
+      "E"
+     ]
+    ]
+   }
+  },
+  "M-06-09": {
+   "capitulo": 6,
+   "nivel": 2,
+   "tipo": "ecuacion-texto",
+   "titulo": "Repaso: la cantina",
+   "enunciado": "En la cantina, un zumo cuesta 0,40 € menos que un bocadillo. 4 bocadillos y 4 zumos cuestan 14,40 €. ¿Cuánto cuesta un bocadillo?",
+   "datos": {
+    "dif": 40,
+    "nb": 4,
+    "nz": 4,
+    "T": 1440,
+    "plantilla": "compras",
+    "ecuacion": [
+     8,
+     -160,
+     0,
+     1440
+    ]
+   }
+  },
+  "M-06-10": {
+   "capitulo": 6,
+   "nivel": 1,
+   "tipo": "urnas-laplace",
+   "titulo": "Repaso: bolsas",
+   "enunciado": "Bolsa 1: 7 bolas rojas y 9 azules. Bolsa 2: 10 rojas y 14 azules. Sacas una bola sin mirar y ganas si es roja. ¿De qué bolsa te conviene sacar?",
+   "datos": {
+    "bolsa1": [
+     7,
+     9
+    ],
+    "bolsa2": [
+     10,
+     14
+    ]
+   }
+  },
+  "M-07-01": {
+   "capitulo": 7,
+   "nivel": 1,
+   "tipo": "rejilla-cifras",
+   "titulo": "Final 1: rejilla de cifras",
+   "enunciado": "Completa la rejilla de 4×4 con las cifras del 1 al 4. Cada cifra va una sola vez en cada fila, en cada columna y en cada caja de borde grueso (2×2).",
+   "datos": {
+    "n": 4,
+    "puzzle": [
+     [
+      0,
+      3,
+      0,
+      1
+     ],
+     [
+      0,
+      0,
+      4,
+      0
+     ],
+     [
+      0,
+      4,
+      0,
+      0
+     ],
+     [
+      1,
+      0,
+      0,
+      0
+     ]
+    ]
+   }
+  },
+  "M-07-02": {
+   "capitulo": 7,
+   "nivel": 1,
+   "tipo": "numero-misterioso",
+   "titulo": "Final 2: número misterioso",
+   "enunciado": "Estoy pensando un número entre 10 y 99. Al dividirlo entre 7 sobra 3. Sus cifras suman 12. ¿Qué número es? Escribe por qué descartas los demás.",
+   "datos": {
+    "lo": 10,
+    "hi": 99,
+    "pistas": [
+     [
+      "resto",
+      7,
+      3
+     ],
+     [
+      "suma_cifras",
+      12
+     ]
+    ]
+   }
+  },
+  "M-07-03": {
+   "capitulo": 7,
+   "nivel": 1,
+   "tipo": "transformacion",
+   "titulo": "Final 3: media vuelta",
+   "enunciado": "Dibuja la figura de vértices A(3, 5), B(4, 4), C(2, 4). Aplícale un giro de 180° con centro en el origen y escribe las coordenadas de la imagen de cada vértice.",
+   "datos": {
+    "transf": "giro180",
+    "puntos": [
+     [
+      3,
+      5
+     ],
+     [
+      4,
+      4
+     ],
+     [
+      2,
+      4
+     ]
+    ],
+    "vector": []
+   }
+  },
+  "M-07-04": {
+   "capitulo": 7,
+   "nivel": 1,
+   "tipo": "balanza",
+   "titulo": "Final 4: balanzas",
+   "enunciado": "Todas las figuras iguales pesan lo mismo, y cada peso es un número entero de gramos entre 1 y 20 (círculos y cuadrados). Balanza 1: 2 círculos y 3 cuadrados pesan 48 g. Balanza 2: 3 círculos y 2 cuadrados pesan 47 g. ¿Cuánto pesa cada figura?",
+   "datos": {
+    "n": 2,
+    "ecuaciones": [
+     [
+      2,
+      3,
+      48
+     ],
+     [
+      3,
+      2,
+      47
+     ]
+    ]
+   }
+  },
+  "M-07-05": {
+   "capitulo": 7,
+   "nivel": 1,
+   "tipo": "dados-justo",
+   "titulo": "Final 5: ¿es justo?",
+   "enunciado": "Ana y Bea tiran dos dados normales y miran la suma de los dos. Ana gana si sale par; Bea gana si sale impar. Antes de calcular, juega 20 tiradas y apunta. ¿Es un juego justo? Justifica la respuesta.",
+   "datos": {
+    "op": "suma",
+    "A": [
+     "par"
+    ],
+    "B": [
+     "impar"
+    ]
+   }
+  },
+  "M-07-06": {
+   "capitulo": 7,
+   "nivel": 2,
+   "tipo": "sumas-cruzadas",
+   "titulo": "Final 6: sumas cruzadas",
+   "enunciado": "Escribe una cifra del 1 al 9 en cada casilla blanca. Cada tramo horizontal o vertical de casillas blancas suma el número de su pista, y dentro de un tramo no se repite ninguna cifra. La pista de un tramo horizontal está a su izquierda, por encima de la raya. La de un tramo vertical está encima, por debajo de la raya.",
+   "datos": {
+    "plantilla": [
+     "..##",
+     "....",
+     "....",
+     "##.."
+    ],
+    "tramos": [
+     {
+      "dir": "h",
+      "celdas": [
+       [
+        0,
+        0
+       ],
+       [
+        0,
+        1
+       ]
+      ],
+      "suma": 13
+     },
+     {
+      "dir": "h",
+      "celdas": [
+       [
+        1,
+        0
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        1,
+        3
+       ]
+      ],
+      "suma": 11
+     },
+     {
+      "dir": "h",
+      "celdas": [
+       [
+        2,
+        0
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        2,
+        3
+       ]
+      ],
+      "suma": 14
+     },
+     {
+      "dir": "h",
+      "celdas": [
+       [
+        3,
+        2
+       ],
+       [
+        3,
+        3
+       ]
+      ],
+      "suma": 14
+     },
+     {
+      "dir": "v",
+      "celdas": [
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        0
+       ],
+       [
+        2,
+        0
+       ]
+      ],
+      "suma": 9
+     },
+     {
+      "dir": "v",
+      "celdas": [
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        2,
+        1
+       ]
+      ],
+      "suma": 21
+     },
+     {
+      "dir": "v",
+      "celdas": [
+       [
+        1,
+        2
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        3,
+        2
+       ]
+      ],
+      "suma": 14
+     },
+     {
+      "dir": "v",
+      "celdas": [
+       [
+        1,
+        3
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        3,
+        3
+       ]
+      ],
+      "suma": 8
+     }
+    ]
+   }
+  },
+  "M-07-07": {
+   "capitulo": 7,
+   "nivel": 2,
+   "tipo": "criptoaritmetica",
+   "titulo": "Final 7: palabras que suman",
+   "enunciado": "En la suma COSA + COSA = FOCA, cada letra es una cifra distinta y letras iguales son cifras iguales. Ninguna palabra empieza por 0. ¿Qué cifra es cada letra?",
+   "datos": {
+    "sumandos": [
+     "COSA",
+     "COSA"
+    ],
+    "resultado": "FOCA"
+   }
+  },
+  "M-07-08": {
+   "capitulo": 7,
+   "nivel": 2,
+   "tipo": "estimacion-fermi",
+   "titulo": "Final 8: pasos hasta casa",
+   "enunciado": "Primero estima de cabeza el orden de magnitud: la potencia de 10 más cercana (¿10², 10³, 10⁶…?). Luego calcula. Un paso tuyo mide 75 cm. ¿Cuántos pasos das para recorrer 6 km? Los datos del juego son supuestos, no medidos.",
+   "datos": {
+    "plantilla": "pasos",
+    "p": {
+     "cm": 75,
+     "km": 6
+    }
+   }
+  },
+  "M-07-09": {
+   "capitulo": 7,
+   "nivel": 2,
+   "tipo": "rejilla-logica",
+   "titulo": "Final 9: las mochilas",
+   "enunciado": "Dani, Eva, Fran y Gala: cada uno tiene un valor distinto de cada categoría (color de mochila y número favorito). Usa la tabla: pon una X donde no pueda ser y un círculo donde sí. Pistas: (1) Dani prefiere un número menor que Fran. (2) Quien lleva la mochila verde prefiere el 12. (3) Fran no lleva la mochila verde. (4) Quien prefiere el 20 no lleva la mochila roja. (5) Eva no lleva la mochila negra. (6) Fran no lleva la mochila negra. (7) Quien prefiere el 3 lleva la mochila azul.",
+   "datos": {
+    "personas": [
+     "Dani",
+     "Eva",
+     "Fran",
+     "Gala"
+    ],
+    "categorias": [
+     {
+      "nombre": "color de mochila",
+      "valores": [
+       "roja",
+       "verde",
+       "azul",
+       "negra"
+      ],
+      "pred": "lleva la mochila {v}",
+      "quien": "quien lleva la mochila {v}"
+     },
+     {
+      "nombre": "número favorito",
+      "valores": [
+       "3",
+       "7",
+       "12",
+       "20"
+      ],
+      "pred": "prefiere el {v}",
+      "quien": "quien prefiere el {v}",
+      "antes": "prefiere un número menor"
+     }
+    ],
+    "pistas": [
+     [
+      "antes",
+      0,
+      2,
+      1
+     ],
+     [
+      "enlace",
+      0,
+      1,
+      1,
+      2
+     ],
+     [
+      "no",
+      2,
+      0,
+      1
+     ],
+     [
+      "no_enlace",
+      1,
+      3,
+      0,
+      0
+     ],
+     [
+      "no",
+      1,
+      0,
+      3
+     ],
+     [
+      "no",
+      2,
+      0,
+      3
+     ],
+     [
+      "enlace",
+      1,
+      0,
+      0,
+      2
+     ]
+    ],
+    "ordenada": 1
+   }
+  },
+  "M-07-10": {
+   "capitulo": 7,
+   "nivel": 2,
+   "tipo": "patron-figuras",
+   "titulo": "Final 10: hexágonos",
+   "enunciado": "Con palillos se construye una fila de hexágonos pegados por un lado. La figura 1 usa 6 palillos, la 2 usa 11 y la 3 usa 16. ¿Cuántos palillos usa la figura 15? ¿Qué figura usa exactamente 356 palillos? Escribe la regla para la figura n.",
+   "datos": {
+    "figura": "hexagonos",
+    "descripcion": "una fila de hexágonos pegados por un lado",
+    "terminos": [
+     6,
+     11,
+     16
+    ],
+    "N": 15,
+    "T": 356
+   }
+  },
+  "M-07-11": {
+   "capitulo": 7,
+   "nivel": 2,
+   "tipo": "laberinto-multiplos",
+   "titulo": "Final 11: múltiplos de 7",
+   "enunciado": "Ve de la casilla de arriba a la izquierda a la de abajo a la derecha (6×6 casillas) pisando solo múltiplos de 7. Te mueves en horizontal o en vertical, nunca en diagonal, y no pisas dos veces la misma casilla. Hay un único camino.",
+   "datos": {
+    "k": 7,
+    "rejilla": [
+     [
+      49,
+      32,
+      63,
+      63,
+      63,
+      77
+     ],
+     [
+      84,
+      70,
+      28,
+      65,
+      44,
+      70
+     ],
+     [
+      91,
+      89,
+      91,
+      34,
+      14,
+      21
+     ],
+     [
+      96,
+      78,
+      40,
+      57,
+      91,
+      33
+     ],
+     [
+      31,
+      86,
+      65,
+      26,
+      91,
+      70
+     ],
+     [
+      67,
+      63,
+      28,
+      96,
+      25,
+      14
+     ]
+    ]
+   }
+  },
+  "M-07-12": {
+   "capitulo": 7,
+   "nivel": 3,
+   "tipo": "rejilla-jaulas",
+   "titulo": "Final 12: jaulas de seis",
+   "enunciado": "Completa la rejilla de 6×6 con las cifras del 1 al 6, sin repetir ninguna en una fila ni en una columna. Cada jaula (zona de borde grueso) lleva un número y una operación (multiplicación, resta y suma): sus cifras, operadas, dan ese número. En la resta y en la división se empieza por la cifra mayor. Una jaula de una sola casilla lleva solo un número: esa es su cifra. Dentro de una jaula sí se pueden repetir cifras si están en filas y columnas distintas.",
+   "datos": {
+    "n": 6,
+    "jaulas": [
+     {
+      "celdas": [
+       [
+        5,
+        2
+       ],
+       [
+        5,
+        3
+       ]
+      ],
+      "op": "-",
+      "valor": 4
+     },
+     {
+      "celdas": [
+       [
+        2,
+        4
+       ],
+       [
+        2,
+        5
+       ],
+       [
+        3,
+        5
+       ]
+      ],
+      "op": "+",
+      "valor": 8
+     },
+     {
+      "celdas": [
+       [
+        2,
+        3
+       ],
+       [
+        3,
+        3
+       ]
+      ],
+      "op": "x",
+      "valor": 30
+     },
+     {
+      "celdas": [
+       [
+        0,
+        3
+       ],
+       [
+        1,
+        3
+       ]
+      ],
+      "op": "-",
+      "valor": 2
+     },
+     {
+      "celdas": [
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        0
+       ]
+      ],
+      "op": "-",
+      "valor": 4
+     },
+     {
+      "celdas": [
+       [
+        3,
+        4
+       ],
+       [
+        4,
+        3
+       ],
+       [
+        4,
+        4
+       ]
+      ],
+      "op": "+",
+      "valor": 8
+     },
+     {
+      "celdas": [
+       [
+        0,
+        4
+       ],
+       [
+        0,
+        5
+       ]
+      ],
+      "op": "-",
+      "valor": 2
+     },
+     {
+      "celdas": [
+       [
+        5,
+        0
+       ],
+       [
+        5,
+        1
+       ]
+      ],
+      "op": "x",
+      "valor": 6
+     },
+     {
+      "celdas": [
+       [
+        1,
+        4
+       ],
+       [
+        1,
+        5
+       ]
+      ],
+      "op": "+",
+      "valor": 8
+     },
+     {
+      "celdas": [
+       [
+        4,
+        0
+       ]
+      ],
+      "op": "=",
+      "valor": 4
+     },
+     {
+      "celdas": [
+       [
+        2,
+        2
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        4,
+        2
+       ]
+      ],
+      "op": "+",
+      "valor": 11
+     },
+     {
+      "celdas": [
+       [
+        0,
+        2
+       ],
+       [
+        1,
+        2
+       ]
+      ],
+      "op": "+",
+      "valor": 5
+     },
+     {
+      "celdas": [
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        1
+       ]
+      ],
+      "op": "x",
+      "valor": 6
+     },
+     {
+      "celdas": [
+       [
+        2,
+        0
+       ],
+       [
+        2,
+        1
+       ]
+      ],
+      "op": "x",
+      "valor": 18
+     },
+     {
+      "celdas": [
+       [
+        3,
+        0
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        4,
+        1
+       ]
+      ],
+      "op": "+",
+      "valor": 11
+     },
+     {
+      "celdas": [
+       [
+        4,
+        5
+       ],
+       [
+        5,
+        5
+       ]
+      ],
+      "op": "-",
+      "valor": 3
+     },
+     {
+      "celdas": [
+       [
+        5,
+        4
+       ]
+      ],
+      "op": "=",
+      "valor": 6
+     }
+    ]
+   }
+  },
+  "M-07-13": {
+   "capitulo": 7,
+   "nivel": 3,
+   "tipo": "cuadrado-magico",
+   "titulo": "Final 13: cuadrado mágico de 4×4",
+   "enunciado": "Coloca los números 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 y 16 en el cuadrado de 4×4, cada uno una vez, para que todas las filas, todas las columnas y las dos diagonales sumen lo mismo. Algunos ya están puestos.",
+   "datos": {
+    "n": 4,
+    "numeros": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ],
+    "puzzle": [
+     [
+      0,
+      5,
+      0,
+      4
+     ],
+     [
+      0,
+      0,
+      6,
+      15
+     ],
+     [
+      0,
+      11,
+      7,
+      0
+     ],
+     [
+      0,
+      8,
+      12,
+      0
+     ]
+    ]
+   }
+  },
+  "M-07-14": {
+   "capitulo": 7,
+   "nivel": 3,
+   "tipo": "veraces-mentirosos",
+   "titulo": "Final 14: la isla otra vez",
+   "enunciado": "En la isla de las dos tribus, cada persona dice siempre la verdad o miente siempre. Ana dice: «David y yo somos de tipos distintos». Bruno dice: «Carla dice siempre la verdad». Carla dice: «Ana miente siempre». David dice: «Exactamente 3 de nosotros mienten siempre». ¿Quién dice la verdad y quién miente?",
+   "datos": {
+    "nombres": [
+     "Ana",
+     "Bruno",
+     "Carla",
+     "David"
+    ],
+    "frases": [
+     [
+      "mismo",
+      0,
+      0,
+      3,
+      false
+     ],
+     [
+      "es",
+      1,
+      2,
+      true
+     ],
+     [
+      "es",
+      2,
+      0,
+      false
+     ],
+     [
+      "cuantos",
+      3,
+      3
+     ]
+    ]
+   }
+  },
+  "M-07-15": {
+   "capitulo": 7,
+   "nivel": 3,
+   "tipo": "sumas-cruzadas",
+   "titulo": "Final 15: sumas cruzadas grandes",
+   "enunciado": "Escribe una cifra del 1 al 9 en cada casilla blanca. Cada tramo horizontal o vertical de casillas blancas suma el número de su pista, y dentro de un tramo no se repite ninguna cifra. La pista de un tramo horizontal está a su izquierda, por encima de la raya. La de un tramo vertical está encima, por debajo de la raya.",
+   "datos": {
+    "plantilla": [
+     "..#..",
+     ".....",
+     "#...#",
+     ".....",
+     "..#.."
+    ],
+    "tramos": [
+     {
+      "dir": "h",
+      "celdas": [
+       [
+        0,
+        0
+       ],
+       [
+        0,
+        1
+       ]
+      ],
+      "suma": 17
+     },
+     {
+      "dir": "h",
+      "celdas": [
+       [
+        0,
+        3
+       ],
+       [
+        0,
+        4
+       ]
+      ],
+      "suma": 10
+     },
+     {
+      "dir": "h",
+      "celdas": [
+       [
+        1,
+        0
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        1,
+        2
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        1,
+        4
+       ]
+      ],
+      "suma": 28
+     },
+     {
+      "dir": "h",
+      "celdas": [
+       [
+        2,
+        1
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        2,
+        3
+       ]
+      ],
+      "suma": 19
+     },
+     {
+      "dir": "h",
+      "celdas": [
+       [
+        3,
+        0
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        3,
+        2
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        3,
+        4
+       ]
+      ],
+      "suma": 34
+     },
+     {
+      "dir": "h",
+      "celdas": [
+       [
+        4,
+        0
+       ],
+       [
+        4,
+        1
+       ]
+      ],
+      "suma": 15
+     },
+     {
+      "dir": "h",
+      "celdas": [
+       [
+        4,
+        3
+       ],
+       [
+        4,
+        4
+       ]
+      ],
+      "suma": 5
+     },
+     {
+      "dir": "v",
+      "celdas": [
+       [
+        0,
+        0
+       ],
+       [
+        1,
+        0
+       ]
+      ],
+      "suma": 9
+     },
+     {
+      "dir": "v",
+      "celdas": [
+       [
+        3,
+        0
+       ],
+       [
+        4,
+        0
+       ]
+      ],
+      "suma": 17
+     },
+     {
+      "dir": "v",
+      "celdas": [
+       [
+        0,
+        1
+       ],
+       [
+        1,
+        1
+       ],
+       [
+        2,
+        1
+       ],
+       [
+        3,
+        1
+       ],
+       [
+        4,
+        1
+       ]
+      ],
+      "suma": 35
+     },
+     {
+      "dir": "v",
+      "celdas": [
+       [
+        1,
+        2
+       ],
+       [
+        2,
+        2
+       ],
+       [
+        3,
+        2
+       ]
+      ],
+      "suma": 13
+     },
+     {
+      "dir": "v",
+      "celdas": [
+       [
+        0,
+        3
+       ],
+       [
+        1,
+        3
+       ],
+       [
+        2,
+        3
+       ],
+       [
+        3,
+        3
+       ],
+       [
+        4,
+        3
+       ]
+      ],
+      "suma": 24
+     },
+     {
+      "dir": "v",
+      "celdas": [
+       [
+        0,
+        4
+       ],
+       [
+        1,
+        4
+       ]
+      ],
+      "suma": 17
+     },
+     {
+      "dir": "v",
+      "celdas": [
+       [
+        3,
+        4
+       ],
+       [
+        4,
+        4
+       ]
+      ],
+      "suma": 13
+     }
+    ]
+   }
+  },
+  "M-08-01": {
+   "capitulo": 8,
+   "nivel": 2,
+   "tipo": "ecuacion-segundo-grado",
+   "titulo": "El huerto",
+   "enunciado": "Un huerto rectangular mide 5 m más de largo que de ancho y tiene 696 m² de área. ¿Cuánto mide de ancho? Plantea la ecuación de segundo grado. ¿Qué haces con la solución negativa?",
+   "datos": {
+    "k": 5,
+    "A": 696
+   }
+  },
+  "M-08-02": {
+   "capitulo": 8,
+   "nivel": 2,
+   "tipo": "sistema-disfrazado",
+   "titulo": "Las entradas del cine",
+   "enunciado": "En el cine, la entrada de adulto cuesta 8 € y la infantil 5 €. Entraron 19 personas y se recaudaron 131 €. ¿Cuántos adultos y cuántos niños entraron? Plantea un sistema de dos ecuaciones.",
+   "datos": {
+    "precio_adulto": 8,
+    "precio_nino": 5,
+    "personas": 19,
+    "total": 131
+   }
+  },
+  "M-08-03": {
+   "capitulo": 8,
+   "nivel": 3,
+   "tipo": "probabilidad-compuesta",
+   "titulo": "Dos bolas sin devolver",
+   "enunciado": "Una bolsa tiene 6 bolas rojas y 6 azules. Sacas dos, una detrás de otra, sin devolver la primera. ¿Qué probabilidad hay de que las dos sean del mismo color? Haz un diagrama de árbol con las probabilidades en cada rama.",
+   "datos": {
+    "rojas": 6,
+    "azules": 6,
+    "evento": "mismo"
+   }
+  },
+  "M-08-04": {
+   "capitulo": 8,
+   "nivel": 2,
+   "tipo": "recuento",
+   "titulo": "Códigos sin repetir",
+   "enunciado": "¿Cuántos códigos de 3 cifras distintas puedes formar con las cifras del 1 al 6? ¿Cuántos de ellos son pares?",
+   "datos": {
+    "plantilla": "codigos",
+    "p": {
+     "k": 3,
+     "n": 6
+    }
+   }
+  },
+  "M-08-05": {
+   "capitulo": 8,
+   "nivel": 3,
+   "tipo": "trigonometria-altura",
+   "titulo": "La altura del árbol",
+   "enunciado": "Un árbol vertical crece en un terreno horizontal. Para medir su altura te pones a 32 m de su tronco, medidos en horizontal, y ves la copa con un ángulo de 35° sobre la horizontal. Tus ojos están a 1,65 m del suelo. ¿Cuánto mide el árbol? Usa la calculadora en modo grados (DEG).",
+   "datos": {
+    "distancia": 32,
+    "angulo": 35,
+    "ojos": "1,65"
+   }
+  },
+  "M-08-06": {
+   "capitulo": 8,
+   "nivel": 3,
+   "tipo": "distancia-puntos",
+   "titulo": "Distancia en el plano",
+   "enunciado": "Marca A(1, 4) y B(−3, −4). Calcula la distancia de A a B (exacta y con dos decimales) y el punto medio del segmento.",
+   "datos": {
+    "A": [
+     1,
+     4
+    ],
+    "B": [
+     -3,
+     -4
+    ]
+   }
+  },
+  "M-08-07": {
+   "capitulo": 8,
+   "nivel": 3,
+   "tipo": "suma-probable",
+   "titulo": "Repaso: tres dados",
+   "enunciado": "Tiras tres dados de 6 caras y sumas. ¿Qué suma o sumas salen con más probabilidad? ¿Con qué probabilidad? Apuesta primero, luego cuenta todos los casos posibles con una tabla o un árbol.",
+   "datos": {
+    "dados": [
+     6,
+     6,
+     6
+    ]
+   }
+  },
+  "M-08-08": {
+   "capitulo": 8,
+   "nivel": 3,
+   "tipo": "piensa-numero",
+   "titulo": "Repaso: el adivino",
+   "enunciado": "Truco de adivinación: pide a alguien que piense un número, y luego: multiplícalo por 3, súmale 3, multiplícalo por 3, réstale 36, divide entre 9. Te dice el resultado. ¿Qué tienes que hacer con ese resultado para adivinar su número? Demuéstralo con álgebra.",
+   "datos": {
+    "variante": "adivina",
+    "ops": [
+     [
+      "x",
+      3
+     ],
+     [
+      "+",
+      3
+     ],
+     [
+      "x",
+      3
+     ],
+     [
+      "-",
+      36
+     ],
+     [
+      "/",
+      9
+     ]
+    ]
+   }
+  }
+ }
+}
